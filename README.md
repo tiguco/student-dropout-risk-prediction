@@ -33,27 +33,27 @@ Input JSON → Output risk level
 - Add alerting via Slack
 
 
-## Project structure (so far...)
+## Project directory structure (so far...)
 
 student_dropout_prediction/
-├── data/
-│   ├── raw/                # Original dataset (UCI or synthetic)
-│   └── processed/          # Cleaned/feature-engineered data
-├── notebooks/
-│   └── exploratory_analysis.ipynb
-├── src/
-│   ├── data_preprocessing.py
-│   ├── model_training.py
-│   ├── inference_service.py        # FastAPI app here
-│   └── monitoring_drift.py         # Evidently AI drift detector
-├── docker/
-│   ├── Dockerfile_api
-│   └── Dockerfile_monitoring
-├── mlflow_tracking/
-│   └── mlflow_setup.sh
-├── dashboard/ (Optional)
-│   └── streamlit_app.py
-├── requirements.txt
-├── README.md
-└── .gitignore
+    data/
+        raw/                # Original dataset (UCI or synthetic)
+        processed/          # Cleaned/feature-engineered data
+        notebooks/
+           exploratory_analysis.ipynb
+        src/
+          data_preprocessing.py
+          model_training.py
+          inference_service.py        # FastAPI app here
+          monitoring_drift.py         # Evidently AI drift detector
+    docker/
+        Dockerfile_api
+        Dockerfile_monitoring
+    mlflow_tracking/
+        mlflow_setup.sh
+    dashboard/ (Optional)
+        streamlit_app.py
+    requirements.txt
+    README.md
+    .gitignore
 
